@@ -1,35 +1,23 @@
 {
-  "name": "tdd-typescript-jest",
+  "name": "advent-of-typescript",
   "version": "1.0.0",
-  "description": "template to do some tdd katas with typescript and jest",
+  "description": "solutions for advent of code",
   "main": "index.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "watch": "jest --watch",
-    "prepare": "husky install"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dzenzes/tdd-typescript-jest.git"
+    "url": "git+https://github.com/dzenzes/adventOfTypeScript.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/dzenzes/tdd-typescript-jest/issues"
+    "url": "https://github.com/dzenzes/adventOfTypeScript/issues"
   },
-  "homepage": "https://github.com/dzenzes/tdd-typescript-jest#readme",
-  "devDependencies": {
-    "@types/jest": "^27.0.2",
-    "husky": "^7.0.4",
-    "jest": "^27.3.1",
-    "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.4.4"
-  },
+  "homepage": "https://github.com/dzenzes/adventOfTypeScript#readme",
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
-  }
+  },
+  "workspaces": [
+    "./packages/*"
+  ]
 }

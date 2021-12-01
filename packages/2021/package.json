@@ -1,0 +1,23 @@
+{
+  "name": "@aot/2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "husky": "^7.0.4",
+    "jest": "^27.4.2",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.5.2"
+  }
+}

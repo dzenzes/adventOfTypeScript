@@ -20,7 +20,6 @@ export const read = async (
   const input = await promises.readFile(`${baseUrl}${file}`, {
     encoding: "utf-8",
   });
-
   return { input };
 };
 

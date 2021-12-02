@@ -1,14 +1,15 @@
-import { inputAsArray } from "@aot/util";
-import path from "path";
+import { readNumbers } from "@aot/util";
+
 import {
   convertIntoThreeMeasurement,
   countHowOftenNumberIncreases,
 } from "./day01";
 
-const numberInput = inputAsArray(path.join(__dirname, "day01", "input.txt"));
-console.log(`day 01 part 1: ${countHowOftenNumberIncreases(numberInput)}`);
-console.log(
-  `day 01 part 2: ${countHowOftenNumberIncreases(
-    convertIntoThreeMeasurement(numberInput)
-  )}`
-);
+readNumbers(2021, 1).then(({ input }) => {
+  console.log(`day 01 part 1: ${countHowOftenNumberIncreases(input)}`);
+  console.log(
+    `day 01 part 2: ${countHowOftenNumberIncreases(
+      convertIntoThreeMeasurement(input)
+    )}`
+  );
+});

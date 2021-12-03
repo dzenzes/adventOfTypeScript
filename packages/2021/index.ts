@@ -1,3 +1,4 @@
+import { calculateLifeSupport, calculatePowerConsumption } from "./day03";
 import { read, readNumbers } from "@aot/util";
 
 import {
@@ -21,4 +22,12 @@ read(2021, 2).then(({ input }) => {
   const { horizontal, depth } = submarine.position();
 
   console.log(`day 02 part 1: ${horizontal * depth}`);
+});
+
+read(2021, 3).then(({ input }) => {
+  const powerConsumption = calculatePowerConsumption(input.split("\n"));
+  console.log(`day 03 part 1: ${powerConsumption}`);
+
+  const lifeSupport = calculateLifeSupport(input.split("\n"));
+  console.log(`day 03 part 2: ${lifeSupport}`);
 });
